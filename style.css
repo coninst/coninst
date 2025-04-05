@@ -34,7 +34,7 @@ p {
 }
 
 .carousel-slide img {
-    width: 600px;
+    width: 100%; /* Ajusta el ancho de las imágenes al contenedor */
     flex-shrink: 0;
 }
 
@@ -50,30 +50,55 @@ p {
 
 #prevBtn {
     left: 10px;
-    background-color: white; /* Fondo blanco */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 40px; /* Ancho del círculo */
-    height: 40px; /* Altura del círculo */
-    display: flex; /* Centra el contenido dentro del círculo */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un mejor diseño */
-    font-size: 18px; /* Ajusta el tamaño del texto o ícono */
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
     cursor: pointer;
-    border: none; /* Elimina bordes adicionales */
+    border: none;
 }
 
 #nextBtn {
     right: 10px;
-    background-color: white; /* Fondo blanco */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 40px; /* Ancho del círculo */
-    height: 40px; /* Altura del círculo */
-    display: flex; /* Centra el contenido dentro del círculo */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un mejor diseño */
-    font-size: 18px; /* Ajusta el tamaño del texto o ícono */
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
     cursor: pointer;
-    border: none; /* Elimina bordes adicionales */
+    border: none;
+}
+
+/* Consultas de medios para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%; /* Reduce el ancho al 90% del ancho de la pantalla */
+    }
+
+    #prevBtn, #nextBtn {
+        width: 30px; /* Reduce el tamaño de los botones */
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+    }
+
+    #prevBtn, #nextBtn {
+        width: 25px; /* Reduce aún más el tamaño de los botones */
+        height: 25px;
+        font-size: 14px;
+    }
 }
