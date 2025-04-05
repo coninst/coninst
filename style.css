@@ -1,0 +1,79 @@
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif; /* Cambia "Arial" por la tipografía que prefieras */
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: #6c6c6c; /* Cambia el color del texto según tus preferencias */
+}
+
+.carousel-container {
+    width: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centra el contenedor del carrusel */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 600px;
+    flex-shrink: 0;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 40px; /* Ancho del círculo */
+    height: 40px; /* Altura del círculo */
+    display: flex; /* Centra el contenido dentro del círculo */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un mejor diseño */
+    font-size: 18px; /* Ajusta el tamaño del texto o ícono */
+    cursor: pointer;
+    border: none; /* Elimina bordes adicionales */
+}
+
+#nextBtn {
+    right: 10px;
+    background-color: white; /* Fondo blanco */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    width: 40px; /* Ancho del círculo */
+    height: 40px; /* Altura del círculo */
+    display: flex; /* Centra el contenido dentro del círculo */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra para un mejor diseño */
+    font-size: 18px; /* Ajusta el tamaño del texto o ícono */
+    cursor: pointer;
+    border: none; /* Elimina bordes adicionales */
+}
